@@ -3,7 +3,7 @@ In many applications will would like to make use of the entire height of the app
 
 In this demo we show how to construct a page, using a top part, a bottom part and a middle scroll part.
 
-To do this, we first need to add the following styies
+To do this, we first need to add the following styles:
 ```scss
 .full-page {
   height: 100%;
@@ -17,6 +17,8 @@ To do this, we first need to add the following styies
   overflow-y: auto;
 }
 ```
+
+> We usually add these styles to the `styles.scss` file but it can also be added to the specific component scss file
 
 Next, in the html part, we need to have a single root item tagged with the class `full-page`
 
