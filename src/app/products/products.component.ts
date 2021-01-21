@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Context } from '@remult/core';
-import { Products } from './producs';
+import { Products } from './products';
 
 
 @Component({

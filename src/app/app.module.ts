@@ -28,6 +28,7 @@ import { AdminGuard } from './users/roles';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FullPageLayoutComponent } from './full-page-layout/full-page-layout.component';
 import { ProductsComponent } from './products/products.component';
+import { ServerSideSearchComponent } from './server-side-search/server-side-search.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { ProductsComponent } from './products/products.component';
     SignInComponent,
     InputAreaComponent,
     FullPageLayoutComponent,
-    ProductsComponent
+    ProductsComponent,
+    ServerSideSearchComponent
   ],
   imports: [
     BrowserModule,
