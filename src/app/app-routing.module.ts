@@ -10,11 +10,13 @@ import { UsersComponent } from './users/users.component';
 import { Roles, AdminGuard } from './users/roles';
 import { ShowDialogOnErrorErrorHandler } from './common/dialog';
 import { FullPageLayoutComponent } from './full-page-layout/full-page-layout.component';
+import { ProductsComponent } from './products/products.component';
 
 
 const routes: Routes = [
   { path: 'Home', component: HomeComponent },
   { path: 'Full Page Layout', component: FullPageLayoutComponent },
+  { path: 'Products', component: ProductsComponent },
   { path: 'User Accounts', component: UsersComponent, canActivate: [AdminGuard] },
 
   { path: 'Register', component: RegisterComponent, canActivate: [NotSignedInGuard] },

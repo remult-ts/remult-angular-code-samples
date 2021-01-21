@@ -27,6 +27,7 @@ import { DialogService } from './common/dialog';
 import { AdminGuard } from './users/roles';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FullPageLayoutComponent } from './full-page-layout/full-page-layout.component';
+import { ProductsComponent } from './products/products.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { FullPageLayoutComponent } from './full-page-layout/full-page-layout.com
     YesNoQuestionComponent,
     SignInComponent,
     InputAreaComponent,
-    FullPageLayoutComponent
+    FullPageLayoutComponent,
+    ProductsComponent
   ],
   imports: [
     BrowserModule,
