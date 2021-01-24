@@ -16,10 +16,12 @@ import { SearchFieldWithDataGridComponent } from './search-field-with-data-grid/
 import { ServerSideSearchSelectionDialogDemoComponent } from './server-side-search-selection-dialog/server-side-search-selection-dialog-demo.component';
 import { DynamicServerSideSearchDialogComponent } from './dynamic-server-side-search-dialog/dynamic-server-side-search-dialog.component';
 import { DynamicServerSideSearchDialogDemoComponent } from './dynamic-server-side-search-dialog/dynamic-server-side-search-dialog-demo.component';
+import { EncapsulateProductIdColumnComponent } from './encapsulate-product-id-column/encapsulate-product-id-column.component';
 
 
 const routes: Routes = [
   { path: 'Home', component: HomeComponent },
+  { path: 'Encapsulate Product Id Column', component: EncapsulateProductIdColumnComponent },
   { path: 'Server Side Search', component: ServerSideSearchComponent },
   { path: 'Search field with Data Grid', component: SearchFieldWithDataGridComponent },
   { path: 'Server Side Search Selection Dialog', component: ServerSideSearchSelectionDialogDemoComponent },
