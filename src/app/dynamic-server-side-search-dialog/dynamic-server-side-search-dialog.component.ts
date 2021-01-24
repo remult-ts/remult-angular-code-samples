@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialogRef } from '@angular/material/dialog';
 import { BusyService } from '@remult/angular';
-import { Context, Entity, EntityType, SpecificEntityHelper, StringColumn } from '@remult/core';
+import { AndFilter, Context, Entity, EntityType, EntityWhere, SpecificEntityHelper, StringColumn } from '@remult/core';
 
 @Component({
   selector: 'app-dynamic-server-side-search-dialog',
@@ -44,8 +44,9 @@ export class DynamicServerSideSearchDialogComponent implements OnInit {
     this.items = await this.entityContext.find({
       where: p =>
         // if there is a search value, search by it
+        new AndFilter(this._args.where?this._args.where(p):undefined,
         this.searchString.value ? this._args.searchColumn(p).isContains(this.searchString)
-          : undefined
+          : undefined)
     });
   }
 
@@ -82,5 +83,6 @@ export class DynamicServerSideSearchDialogComponent implements OnInit {
 export interface dynamicSearchDialog<T extends Entity> {
   onSelect: (item: T) => void;
   searchColumn: (item: T) => StringColumn;
+  where?:EntityWhere<T>;
 
 }
