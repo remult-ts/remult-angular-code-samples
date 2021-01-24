@@ -17,6 +17,7 @@ import { ServerSideSearchSelectionDialogDemoComponent } from './server-side-sear
 import { DynamicServerSideSearchDialogComponent } from './dynamic-server-side-search-dialog/dynamic-server-side-search-dialog.component';
 import { DynamicServerSideSearchDialogDemoComponent } from './dynamic-server-side-search-dialog/dynamic-server-side-search-dialog-demo.component';
 import { EncapsulateProductIdColumnComponent } from './encapsulate-product-id-column/encapsulate-product-id-column.component';
+import { ImportCsvComponent } from './import-csv/import-csv.component';
 
 
 const routes: Routes = [
@@ -27,6 +28,7 @@ const routes: Routes = [
   { path: 'Server Side Search Selection Dialog', component: ServerSideSearchSelectionDialogDemoComponent },
   { path: 'Dynamic Server Side Search Dialog', component: DynamicServerSideSearchDialogDemoComponent },
   { path: 'Full Page Layout', component: FullPageLayoutComponent },
+  { path: 'import-from-csv', component: ImportCsvComponent },
   { path: 'Products', component: ProductsComponent },
   { path: 'User Accounts', component: UsersComponent, canActivate: [AdminGuard] },
 

@@ -35,6 +35,7 @@
     "@remult/server": "^2.1.2",
     "@remult/server-postgres": "^2.1.2",
     "compression": "^1.7.3",
+    "convert-csv-to-array": "^1.0.3",
     "dotenv": "^8.1.0",
     "express": "^4.16.4",
     "express-force-https": "^1.0.0",

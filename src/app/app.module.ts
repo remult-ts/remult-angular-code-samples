@@ -35,6 +35,7 @@ import { ServerSideSearchSelectionDialogDemoComponent as ServerSideSearchSelecti
 import { DynamicServerSideSearchDialogComponent } from './dynamic-server-side-search-dialog/dynamic-server-side-search-dialog.component';
 import { DynamicServerSideSearchDialogDemoComponent } from './dynamic-server-side-search-dialog/dynamic-server-side-search-dialog-demo.component';
 import { EncapsulateProductIdColumnComponent } from './encapsulate-product-id-column/encapsulate-product-id-column.component';
+import { ImportCsvComponent } from './import-csv/import-csv.component';
 
 @NgModule({
   declarations: [
@@ -54,7 +55,8 @@ import { EncapsulateProductIdColumnComponent } from './encapsulate-product-id-co
     ServerSideSearchSelectionDialogDemoComponent,
     DynamicServerSideSearchDialogComponent,
     DynamicServerSideSearchDialogDemoComponent,
-    EncapsulateProductIdColumnComponent
+    EncapsulateProductIdColumnComponent,
+    ImportCsvComponent
   ],
   imports: [
     BrowserModule,
