@@ -29,6 +29,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FullPageLayoutComponent } from './full-page-layout/full-page-layout.component';
 import { ProductsComponent } from './products/products.component';
 import { ServerSideSearchComponent } from './server-side-search/server-side-search.component';
+import { SearchFieldWithDataGridComponent } from './search-field-with-data-grid/search-field-with-data-grid.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { ServerSideSearchComponent } from './server-side-search/server-side-sear
     InputAreaComponent,
     FullPageLayoutComponent,
     ProductsComponent,
-    ServerSideSearchComponent
+    ServerSideSearchComponent,
+    SearchFieldWithDataGridComponent
   ],
   imports: [
     BrowserModule,

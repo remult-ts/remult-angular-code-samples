@@ -12,11 +12,13 @@ import { ShowDialogOnErrorErrorHandler } from './common/dialog';
 import { FullPageLayoutComponent } from './full-page-layout/full-page-layout.component';
 import { ProductsComponent } from './products/products.component';
 import { ServerSideSearchComponent } from './server-side-search/server-side-search.component';
+import { SearchFieldWithDataGridComponent } from './search-field-with-data-grid/search-field-with-data-grid.component';
 
 
 const routes: Routes = [
   { path: 'Home', component: HomeComponent },
   { path: 'Server Side Search', component: ServerSideSearchComponent },
+  { path: 'Search field with Data Grid', component: SearchFieldWithDataGridComponent },
   { path: 'Full Page Layout', component: FullPageLayoutComponent },
   { path: 'Products', component: ProductsComponent },
   { path: 'User Accounts', component: UsersComponent, canActivate: [AdminGuard] },
