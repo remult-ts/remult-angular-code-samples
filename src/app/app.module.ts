@@ -30,6 +30,8 @@ import { FullPageLayoutComponent } from './full-page-layout/full-page-layout.com
 import { ProductsComponent } from './products/products.component';
 import { ServerSideSearchComponent } from './server-side-search/server-side-search.component';
 import { SearchFieldWithDataGridComponent } from './search-field-with-data-grid/search-field-with-data-grid.component';
+import { ServerSideSearchSelectionDialogComponent } from './server-side-search-selection-dialog/server-side-search-selection-dialog.component';
+import { ServerSideSearchSelectionDialogComponentDemo } from './server-side-search-selection-dialog/server-side-search-selection-dialog-demo.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +46,9 @@ import { SearchFieldWithDataGridComponent } from './search-field-with-data-grid/
     FullPageLayoutComponent,
     ProductsComponent,
     ServerSideSearchComponent,
-    SearchFieldWithDataGridComponent
+    SearchFieldWithDataGridComponent,
+    ServerSideSearchSelectionDialogComponent,
+    ServerSideSearchSelectionDialogComponentDemo
   ],
   imports: [
     BrowserModule,
@@ -66,6 +70,7 @@ import { SearchFieldWithDataGridComponent } from './search-field-with-data-grid/
   ],
   providers: [DialogService, AdminGuard],
   bootstrap: [AppComponent],
-  entryComponents: [YesNoQuestionComponent, SignInComponent, InputAreaComponent]
+  entryComponents: [YesNoQuestionComponent, SignInComponent, InputAreaComponent,
+    ServerSideSearchSelectionDialogComponent]
 })
 export class AppModule { }
