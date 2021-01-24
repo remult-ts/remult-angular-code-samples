@@ -13,14 +13,17 @@ import { FullPageLayoutComponent } from './full-page-layout/full-page-layout.com
 import { ProductsComponent } from './products/products.component';
 import { ServerSideSearchComponent } from './server-side-search/server-side-search.component';
 import { SearchFieldWithDataGridComponent } from './search-field-with-data-grid/search-field-with-data-grid.component';
-import { ServerSideSearchSelectionDialogComponentDemo } from './server-side-search-selection-dialog/server-side-search-selection-dialog-demo.component';
+import { ServerSideSearchSelectionDialogDemoComponent } from './server-side-search-selection-dialog/server-side-search-selection-dialog-demo.component';
+import { DynamicServerSideSearchDialogComponent } from './dynamic-server-side-search-dialog/dynamic-server-side-search-dialog.component';
+import { DynamicServerSideSearchDialogDemoComponent } from './dynamic-server-side-search-dialog/dynamic-server-side-search-dialog-demo.component';
 
 
 const routes: Routes = [
   { path: 'Home', component: HomeComponent },
   { path: 'Server Side Search', component: ServerSideSearchComponent },
   { path: 'Search field with Data Grid', component: SearchFieldWithDataGridComponent },
-  { path: 'Server Side Search Selection Dialog', component: ServerSideSearchSelectionDialogComponentDemo },
+  { path: 'Server Side Search Selection Dialog', component: ServerSideSearchSelectionDialogDemoComponent },
+  { path: 'Dynamic Server Side Search Dialog', component: DynamicServerSideSearchDialogDemoComponent },
   { path: 'Full Page Layout', component: FullPageLayoutComponent },
   { path: 'Products', component: ProductsComponent },
   { path: 'User Accounts', component: UsersComponent, canActivate: [AdminGuard] },

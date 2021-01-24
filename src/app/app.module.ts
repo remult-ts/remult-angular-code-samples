@@ -31,7 +31,9 @@ import { ProductsComponent } from './products/products.component';
 import { ServerSideSearchComponent } from './server-side-search/server-side-search.component';
 import { SearchFieldWithDataGridComponent } from './search-field-with-data-grid/search-field-with-data-grid.component';
 import { ServerSideSearchSelectionDialogComponent } from './server-side-search-selection-dialog/server-side-search-selection-dialog.component';
-import { ServerSideSearchSelectionDialogComponentDemo } from './server-side-search-selection-dialog/server-side-search-selection-dialog-demo.component';
+import { ServerSideSearchSelectionDialogDemoComponent as ServerSideSearchSelectionDialogDemoComponent } from './server-side-search-selection-dialog/server-side-search-selection-dialog-demo.component';
+import { DynamicServerSideSearchDialogComponent } from './dynamic-server-side-search-dialog/dynamic-server-side-search-dialog.component';
+import { DynamicServerSideSearchDialogDemoComponent } from './dynamic-server-side-search-dialog/dynamic-server-side-search-dialog-demo.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +50,9 @@ import { ServerSideSearchSelectionDialogComponentDemo } from './server-side-sear
     ServerSideSearchComponent,
     SearchFieldWithDataGridComponent,
     ServerSideSearchSelectionDialogComponent,
-    ServerSideSearchSelectionDialogComponentDemo
+    ServerSideSearchSelectionDialogDemoComponent,
+    DynamicServerSideSearchDialogComponent,
+    DynamicServerSideSearchDialogDemoComponent
   ],
   imports: [
     BrowserModule,
@@ -71,6 +75,7 @@ import { ServerSideSearchSelectionDialogComponentDemo } from './server-side-sear
   providers: [DialogService, AdminGuard],
   bootstrap: [AppComponent],
   entryComponents: [YesNoQuestionComponent, SignInComponent, InputAreaComponent,
-    ServerSideSearchSelectionDialogComponent]
+    ServerSideSearchSelectionDialogComponent,
+    DynamicServerSideSearchDialogComponent]
 })
 export class AppModule { }

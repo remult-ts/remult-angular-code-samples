@@ -14,7 +14,7 @@ import { ServerSideSearchSelectionDialogComponent } from './server-side-search-s
   `,
     styles: []
 })
-export class ServerSideSearchSelectionDialogComponentDemo {
+export class ServerSideSearchSelectionDialogDemoComponent {
     constructor(private context: Context) { }
     productId: string = '';
     async showSelectionDialog() {
