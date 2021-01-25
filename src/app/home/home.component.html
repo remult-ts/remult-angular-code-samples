@@ -6,7 +6,7 @@
 <a href="https://github.com/remult-ts/remult-angular-code-samples">The source code of all these code samples can be
   found at github</a>
 
-
+<data-control [column]="searchString"></data-control>
 <ng-container *ngFor="let m of router.config">
   <ng-container *ngIf="shouldDisplayRoute(m)">
     <mat-card style="margin:10px" (click)="navigate(m)">
