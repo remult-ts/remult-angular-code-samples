@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Context, ServerFunction } from '@remult/core';
 import { Products } from '../products/products';
-import * as xlsx from 'xlsx';
+import * as xlsx from 'xlsx';//https://sheetjs.com/
 
 @Component({
   selector: 'app-import-excel',

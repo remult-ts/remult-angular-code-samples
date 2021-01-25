@@ -19,6 +19,7 @@ import { DynamicServerSideSearchDialogDemoComponent } from './dynamic-server-sid
 import { EncapsulateProductIdColumnComponent } from './encapsulate-product-id-column/encapsulate-product-id-column.component';
 import { ImportCsvComponent } from './import-csv/import-csv.component';
 import { ImportExcelComponent } from './import-excel/import-excel.component';
+import { ExportExcelComponent } from './export-excel/export-excel.component';
 
 
 const routes: Routes = [
@@ -60,7 +61,12 @@ const routes: Routes = [
   },
   {
     path: 'Import from Excel', component: ImportExcelComponent, data: {
-      description: 'Demo of importing products from ab excel file'
+      description: 'Demo of importing products from an excel file'
+    }
+  },
+  {
+    path: 'Export to Excel', component: ExportExcelComponent, data: {
+      description: 'Demo of exporting products to an excel file'
     }
   },
   {
