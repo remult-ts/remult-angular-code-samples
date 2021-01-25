@@ -18,6 +18,7 @@ import { DynamicServerSideSearchDialogComponent } from './dynamic-server-side-se
 import { DynamicServerSideSearchDialogDemoComponent } from './dynamic-server-side-search-dialog/dynamic-server-side-search-dialog-demo.component';
 import { EncapsulateProductIdColumnComponent } from './encapsulate-product-id-column/encapsulate-product-id-column.component';
 import { ImportCsvComponent } from './import-csv/import-csv.component';
+import { ImportExcelComponent } from './import-excel/import-excel.component';
 
 
 const routes: Routes = [
@@ -50,6 +51,9 @@ const routes: Routes = [
   } },
   { path: 'Import from csv', component: ImportCsvComponent,data:{
     description:'Demo of importing products from a csv file'
+  } },
+  { path: 'Import from Excel', component: ImportExcelComponent,data:{
+    description:'Demo of importing products from ab excel file'
   } },
   { path: 'Products', component: ProductsComponent },
   { path: 'User Accounts', component: UsersComponent, canActivate: [AdminGuard] },
