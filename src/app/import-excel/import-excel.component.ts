@@ -35,7 +35,7 @@ export class ImportExcelComponent {
           var dataArray = xlsx.utils.sheet_to_json(oFile.Sheets[sheets[0]], { header: 1 });
 
 
-          console.table(dataArray);
+          
           let processed = await ImportExcelComponent.importProductsArray2(dataArray);
           alert("loaded " + processed + " products");
         };
