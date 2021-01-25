@@ -22,13 +22,35 @@ import { ImportCsvComponent } from './import-csv/import-csv.component';
 
 const routes: Routes = [
   { path: 'Home', component: HomeComponent },
-  { path: 'Encapsulate Product Id Column', component: EncapsulateProductIdColumnComponent },
-  { path: 'Server Side Search', component: ServerSideSearchComponent },
-  { path: 'Search field with Data Grid', component: SearchFieldWithDataGridComponent },
-  { path: 'Server Side Search Selection Dialog', component: ServerSideSearchSelectionDialogDemoComponent },
-  { path: 'Dynamic Server Side Search Dialog', component: DynamicServerSideSearchDialogDemoComponent },
-  { path: 'Full Page Layout', component: FullPageLayoutComponent },
-  { path: 'import-from-csv', component: ImportCsvComponent },
+  {
+    path: 'Encapsulate Product Id Column', component: EncapsulateProductIdColumnComponent, data: {
+      description: `In this sample we'll demonstrate how to create a powerful ProductColumn that will encapsulate all the behaviors that a product needs`
+    }
+  },
+  {
+    path: 'Server Side Search', component: ServerSideSearchComponent, data: {
+      description: 'Demo of a basic angular list, with a search field, that performs the search using server side search'
+    }
+  },
+  {
+    path: 'Search field with Data Grid', component: SearchFieldWithDataGridComponent, data: {
+      description: 'Demo of a data grid with a search field above it, that performs the search using server side search'
+    }
+  },
+  {
+    path: 'Server Side Search Selection Dialog', component: ServerSideSearchSelectionDialogDemoComponent, data: {
+      description: 'a Search popup that can be used to select a product with server side search'
+    }
+  },
+  { path: 'Dynamic Server Side Search Dialog', component: DynamicServerSideSearchDialogDemoComponent ,data:{
+    description:'A search popup that can be used to select any entity, utilizing a server side search'
+  }},
+  { path: 'Full Page Layout', component: FullPageLayoutComponent,data:{
+    description:'Demo of using the full height of the page, with top, bottom and a middle scrollable part'
+  } },
+  { path: 'Import from csv', component: ImportCsvComponent,data:{
+    description:'Demo of importing products from a csv file'
+  } },
   { path: 'Products', component: ProductsComponent },
   { path: 'User Accounts', component: UsersComponent, canActivate: [AdminGuard] },
 
