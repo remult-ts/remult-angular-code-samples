@@ -43,23 +43,35 @@ const routes: Routes = [
       description: 'a Search popup that can be used to select a product with server side search'
     }
   },
-  { path: 'Dynamic Server Side Search Dialog', component: DynamicServerSideSearchDialogDemoComponent ,data:{
-    description:'A search popup that can be used to select any entity, utilizing a server side search'
-  }},
-  { path: 'Full Page Layout', component: FullPageLayoutComponent,data:{
-    description:'Demo of using the full height of the page, with top, bottom and a middle scrollable part'
-  } },
-  { path: 'Import from csv', component: ImportCsvComponent,data:{
-    description:'Demo of importing products from a csv file'
-  } },
-  { path: 'Import from Excel', component: ImportExcelComponent,data:{
-    description:'Demo of importing products from ab excel file'
-  } },
-  { path: 'Products', component: ProductsComponent },
-  { path: 'User Accounts', component: UsersComponent, canActivate: [AdminGuard] },
+  {
+    path: 'Dynamic Server Side Search Dialog', component: DynamicServerSideSearchDialogDemoComponent, data: {
+      description: 'A search popup that can be used to select any entity, utilizing a server side search'
+    }
+  },
+  {
+    path: 'Full Page Layout', component: FullPageLayoutComponent, data: {
+      description: 'Demo of using the full height of the page, with top, bottom and a middle scrollable part'
+    }
+  },
+  {
+    path: 'Import from csv', component: ImportCsvComponent, data: {
+      description: 'Demo of importing products from a csv file'
+    }
+  },
+  {
+    path: 'Import from Excel', component: ImportExcelComponent, data: {
+      description: 'Demo of importing products from ab excel file'
+    }
+  },
+  {
+    path: 'Products', component: ProductsComponent, data: {
+      description: 'A basic admin screen to update products'
+    }
+  },
+  // { path: 'User Accounts', component: UsersComponent, canActivate: [AdminGuard] },
 
-  { path: 'Register', component: RegisterComponent, canActivate: [NotSignedInGuard] },
-  { path: 'Account Info', component: UpdateInfoComponent, canActivate: [SignedInGuard] },
+  // { path: 'Register', component: RegisterComponent, canActivate: [NotSignedInGuard] },
+  // { path: 'Account Info', component: UpdateInfoComponent, canActivate: [SignedInGuard] },
   { path: '', redirectTo: '/Home', pathMatch: 'full' },
   { path: '**', redirectTo: '/Home', pathMatch: 'full' }
 
